@@ -1,0 +1,20 @@
+biden.rebaseUp(1, web3.utils.toBN('450000000000000000000000'))
+biden.rebaseDown(1, web3.utils.toBN('45000000000000000000000'))
+
+
+trump = await Trump.deployed()
+biden = await Biden.deployed()
+tyearn = await TrumpYearnRewards.deployed()
+byearn = await BidenYearnRewards.deployed()
+
+tyearn.setRewardDistribution(accounts[0])
+byearn.setRewardDistribution(accounts[0])
+
+tyearn.setYFI(Trump.address, "0x588C7F9f4Ae4AA0bcEc91847BD65F180c718E8F3")
+byearn.setYFI(Biden.address, "0x588C7F9f4Ae4AA0bcEc91847BD65F180c718E8F3")
+
+trump.transfer(tyearn.address, web3.utils.toBN('47500000000000000000000'))
+biden.transfer(byearn.address, web3.utils.toBN('47500000000000000000000'))
+
+tyearn.notifyRewardAmount(web3.utils.toBN("47500000000000000000000"))
+byearn.notifyRewardAmount(web3.utils.toBN("47500000000000000000000"))

@@ -1,0 +1,55 @@
+Election.finance
+
+Only time will tell
+
+
+What is Election.finance?
+
+Election.finance is defi project using all of the interesting monetary policies and topics floating around deFi and encapsulating it into one single real world event. The U.S presidential election. Who do you think will win? Who do you want to win? We've created a game where the stakes are high. So put your big boy pants on degens
+
+
+Would you like to play a game?
+
+We created two ERC20 token contracts, trump, and biden, each respective of the current US political candidates. There will be zero pre-mine. Each token will have a hard cap of 100k and all tokens will be rewarded to yield farmers and liquidity providers over a period of 6 weeks leading up to 2 weeks before the nomination results.  Depending on the results of the election, The token corresponding to the winner will be rebased 100x and the loser rebased .1x. This means you will be alotted 100x your tokens or the amount of tokens in your wallet balance will be reduced by 90$. We don't know what the value of the tokens will be after the election, That will be up to the market.
+
+
+How does this all work?
+
+Besides tokenomics and distribution, you might ask how the oracle is receiving the winner of the presidential election
+
+Well that is performed in the following way:
+
+We are only considering the popular vote. None of this electoral college bullshit.
+We have constructed a timelock on the rebase method. It can only be called when the minute hits november 3 2020.
+ 
+We have built an AI that will scrape popular news resources and produce a result as to who is the winner. The code for the api will be publicly available and anyone can view it and it's current prediction. 
+
+
+We go through the following steps to provide transparency inspired by zzz.finacne 
+
+
+Transactions & Addresses 
+
+Token Address:
+
+Set Owner as minter TX:
+
+Mint 50,000 Tokens TX:
+
+Remove Owner as minter TX:
+
+Admin Keys Burn TX:
+
+5000 Tokens to Pool A TX:
+
+Uniswap Liquidity lock TX to Pool B:
+
+Pool A Address:
+
+Pool B Address:
+
+Balancer Pool
+
+
+Have fun
+Love anonymous

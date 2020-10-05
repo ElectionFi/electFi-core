@@ -1,0 +1,30 @@
+tyearn = await TrumpYearnLPRewards.deployed()
+byearn = await BidenYearnLPRewards.deployed()
+
+trump = await Trump.deployed()
+biden = await Biden.deployed()
+
+trump.transfer(tyearn.address, web3.utils.toBN('47500000000000000000000'))
+biden.transfer(byearn.address, web3.utils.toBN('47500000000000000000000'))
+
+tyearn.setRewardDistribution(accounts[0])
+byearn.setRewardDistribution(accounts[0])
+
+tyearn.setYFI(Trump.address, Trump.address, Biden.address, Biden.address, byearn.address)
+byearn.setYFI(Biden.address, Biden.address, Trump.address, Trump.address, tyearn.address)
+
+trump.approve(tyearn.address, 1000000)
+tyearn.stake(100)
+
+biden.approve(byearn.address, 1000000)
+byearn.stake(100)
+
+tyearn.lose()
+
+tyearn.finalize()
+byearn.finalize()
+
+trump.balanceOf(byearn.address).then(s => s.toString())
+trump.balanceOf(tyearn.address).then(s => s.toString())
+trump.balanceOf(accounts[0]).then(s => s.toString())
+biden.balanceOf(accounts[0]).then(s => s.toString())
