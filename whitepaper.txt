@@ -1,55 +1,65 @@
-Election.finance
+ElectionFi
 
-Only time will tell
-
-
-What is Election.finance?
-
-Election.finance is defi project using all of the interesting monetary policies and topics floating around deFi and encapsulating it into one single real world event. The U.S presidential election. Who do you think will win? Who do you want to win? We've created a game where the stakes are high. So put your big boy pants on degens
-
-
-Would you like to play a game?
-
-We created two ERC20 token contracts, trump, and biden, each respective of the current US political candidates. There will be zero pre-mine. Each token will have a hard cap of 100k and all tokens will be rewarded to yield farmers and liquidity providers over a period of 6 weeks leading up to 2 weeks before the nomination results.  Depending on the results of the election, The token corresponding to the winner will be rebased 100x and the loser rebased .1x. This means you will be alotted 100x your tokens or the amount of tokens in your wallet balance will be reduced by 90$. We don't know what the value of the tokens will be after the election, That will be up to the market.
-
-
+We’re very excited to introduce Election Fi to the DeFi and Yield Farming community. We anticipate this will be one of the most interesting game theory experiments to take place in the crypto sphere this year.
+It’s safe to say that the political divide in the U.S. is at an unprecedented level.
+We wanted to take this divide and give it a vehicle where participants can band together and have a socially vested interest in their political party.
+Who do you think will win the election? Are you team $YJOE or $YDON?
+In a nutshell:
+No Presale or VC backing
+50k hard capped supply for each token. No new tokens can be minted
+90% of supply is rewarded to liquidity providers
+Stake liquidity pool tokens to farm for YDON or YJOE
+30% penalty for exiting the liquidity pool before the election
+Winning contract splits prize pot. Pay out is proportional to your stake
+Additional token (ticker symbol to be announced later) will be airdropped after the election to YDON / YJOE holders. Snapshot will be November 7.
+—
 How does this all work?
-
-Besides tokenomics and distribution, you might ask how the oracle is receiving the winner of the presidential election
-
-Well that is performed in the following way:
-
-We are only considering the popular vote. None of this electoral college bullshit.
-We have constructed a timelock on the rebase method. It can only be called when the minute hits november 3 2020.
- 
-We have built an AI that will scrape popular news resources and produce a result as to who is the winner. The code for the api will be publicly available and anyone can view it and it's current prediction. 
-
-
-We go through the following steps to provide transparency inspired by zzz.finacne 
-
-
-Transactions & Addresses 
-
-Token Address:
-
-Set Owner as minter TX:
-
-Mint 50,000 Tokens TX:
-
-Remove Owner as minter TX:
-
-Admin Keys Burn TX:
-
-5000 Tokens to Pool A TX:
-
-Uniswap Liquidity lock TX to Pool B:
-
-Pool A Address:
-
-Pool B Address:
-
-Balancer Pool
-
-
-Have fun
-Love anonymous
+Once the results of the election are confirmed, the losing candidate’s tokens will be sent to the stakers of the winning candidate’s. This means that if Candidate A wins, but you were staking tokens for Candidate B, you would lose your tokens and they would be sent to those staking Candidate A’s tokens. We will call this event the “Election Fi Purge”.
+You must stake your tokens in order to participate. Simply holding the tokens in your wallet does not make you eligible for the prize pot.
+Mock scenario: Assuming all 50,000 YDON and YJOE tokens are being staked by game participants; when the result of the election comes in, all 50,000 tokens of the losing token will be proportionally sent to the wallets of those holding the winning token. This is what we mean by “winner takes all”.
+In the above scenario, the more you initially hold, the more you will receive from the Election Fi Purge (since it is proportionally sent out).
+What’s the value in holding YDON or YJOE you ask? We will do a 1:1 airdrop of our governance token, Election Fi Token, for every $YDON or $YJOE token you hold. The token will not be released until after a winner has been named.
+90% of the tokens will be rewarded to liquidity providers leading up to the election. 3% of it will go to marketing promotions, and 7% will be split by our entire team. You can receive $yDON and $yJOE by staking DAI in our initial seed pool (10,000 yDON and 10,000 yJOE), or you can stake ETH/yDON and ETH/yJOE Uniswap tokens to play for the prize pot and also earn additional liquidity rewards (up to 30,000 of each token).
+Rules of farming
+The only thing that is different with farming $YJOE or $YDON is that there is a 30% penalty for exiting your stake before the Election Fi contracts confirms and announces an official winner. We do this to incentivize people to provide liquidity, hold their tokens, and to keep the pot size bigger.
+In theory, this promotes a larger pay out for the winning token holders while also preventing the tokens from losing value within a volatile market.
+Bonus Pot
+An additional way for participants to win extra tokens is with the bonus pot.
+If a user chooses to exit their stake and pay the 30% penalty, that penalty goes towards the bonus pot. All penalty fees collected will go towards this pot.
+100% of the bonus pot will be proportionally sent to holders of the winning token based on the amount of tokens they hold.
+This means there are 2 ways to win by playing election finance.
+Election Fi Token Airdrop
+A frequently asked question is why someone should hold their $YDON or $YJOE after the election.
+The answer to this is the Election Fi Token Airdrop.
+Election Fi Tokens will be used as betting credits for our upcoming decentralized betting platform. We are excited to share more details of this platform as we get closer to the election.
+The airdrop will happen in November after the election winner is confirmed.
+—
+Important links
+Twitter: @ElectFi (DMs always open for suggestions / questions)
+Telegram: https://t.me/electionfinance (come hangout with the team!)
+Visit our website to begin farming: Election.Finance
+$YJOE Uniswap
+$YDON Uniswap
+$YJOE Token Address: https://etherscan.io/address/0x39e7f52ae509a51678b541018bd4811b6af09fea
+$YDON Token Address: https://etherscan.io/address/0xc732ea7fffa34e25573a318bd9c2bc986939f972
+—
+FAQ:
+Are you guys audited?
+Like most popular DeFi projects we are not officially audited, but we are based off source code that has been (YFI, AMPL, and SNX).
+We wanted to post this at the very top of the FAQ for transparency.
+The process of getting officially audited is costly, and our team does not have the funds to pursue an official audit.
+With that said, our code is open source and transparent for the world to see. We are confident in what we are building, so if anyone wishes to donate an audit service or funds for an audit, we would be more than happy to move forward with an audit of our smart contracts.
+What is the benefit to an early adopter of the token?
+The reward for staking is higher the earlier you are. The staking reward will decrease as it becomes more popular, especially since there are only 50k tokens for each “candidate”.
+How do I play the game and be eligible for the pot prize?
+Simply stake ETH/YDON or ETH/YJOE on our website. Remember if you exit your stake before we announce a winner of the election, there is a 30% penalty for exiting early.
+Where do I get the liquidity pool tokens? (ETH/YDON and ETH/YJOE)
+You can buy the tokens on Uniswap and provide liquidity:
+Buy $YJOE Uniswap
+Buy $YDON Uniswap
+Add liquidity for YJOE
+Add liquidity for YDON
+Or, you can farm them in the seed pool while they last.
+Do you guys have plans to add governance?
+Yes, we plan on introducing a fully decentralized governance. We plan on calling this our “Election Fi Cabinet”, and it will allow token holders to propose and vote on any changes.
+Happy Farming! 👨‍🌾
